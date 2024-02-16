@@ -1,0 +1,324 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap");
+/* Imposta stili di base per tutti gli elementi HTML */
+* {
+  margin: 0; /* Imposta il margine a 0 per tutti gli elementi */
+  padding: 0; /* Imposta il padding a 0 per tutti gli elementi */
+  box-sizing: border-box; /* Imposta box-sizing a border-box per includere padding e bordo nella larghezza e nell'altezza degli elementi */
+  text-decoration: none; /* Rimuove la sottolineatura da tutti i link */
+  border: none; /* Rimuove tutti i bordi */
+  outline: none; /* Rimuove tutti gli outline quando gli elementi sono attivi */
+  scroll-behavior: smooth; /* Aggiunge uno scorrimento fluido ai link interni */
+  font-family: "Poppins", sans-serif; /* Imposta il tipo di carattere principale */
+}
+
+/* Definisce variabili CSS globali per i colori */
+:root {
+  --bg-color: #120829; /* Colore di sfondo principale */
+  --second-bg-color: #0d053a; /* Secondo colore di sfondo */
+  --text-color: #ededed; /* Colore del testo principale */
+  --main-color: #f000f0; /* Colore principale */
+}
+
+/* Applica stili specifici all'elemento html */
+html {
+  font-size: 62.5%; /* Imposta la dimensione del carattere di base a 62.5% */
+  overflow-x: hidden; /* Nasconde la barra di scorrimento orizzontale */
+}
+
+/* Applica stili specifici all'elemento body */
+body {
+  background:var(--second-bg-color);
+  
+  color: var(
+    --text-color
+  ); /* Imposta il colore del testo utilizzando la variabile --text-color */
+}
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 20px 10%;
+  /* background-color: yellowgreen;*/
+  background-color: transparent;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 100;
+}
+
+.logo {
+  font-size: 25px;
+  color: var(--text-color);
+  text-decoration: none;
+  font-weight: 600;
+}
+.navbar a {
+  font-size: 18px;
+  color: var(--text-color);
+  text-decoration: mone;
+  font-weight: 500;
+  margin-left: 35px;
+}
+
+.navbar a:hover,
+.navbar a.active {
+  color: var(--main-color);
+}
+
+.home {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  padding: 0 10%;
+  background: url(home.jpg) no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+section{
+  min-height:100vh;
+  padding:10rem;
+}
+
+.home-content {
+  max-width: 600px;
+}
+.home-content .text-animate{
+  position: relative;
+  width: 32.8rem;
+}
+.home-content .text-animate h3{
+  font-size: 3.2rem;
+  font-weight: 700;
+  color: transparent;
+  -webkit-text-sTroke: .7px var(--main-color);
+}
+
+.home-content h1 {
+  font-size: 56px;
+  font-weight: 700;
+
+  line-height: 1.2;
+}
+
+
+.home-content p {
+  font-size: 16px;
+  margin: 20px 0 40px;
+}
+.home-content .btn-box {
+  display: flex;
+  justify-content: space-between;
+  width: 345px;
+  height: 50px;
+}
+.btn-box a {
+  position: relative;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  width: 150px;
+  height: 100%;
+  background: var(--main-color);
+  border: 2px solid var(--main-color);
+  border-radius: 8px;
+  font-size: 19px;
+  color: var(--bg-color);
+  text-decoration: none;
+  font-weight: 600;
+  letter-spacing: 1px;
+  z-index: 1;
+  /*quando il container subisce un overflow, il contenuto strabordante viene nascosto*/
+  overflow: hidden;
+  transition: .5s;;
+}
+.btn-box a:hover{
+    color: var(--main-color);
+}
+.btn-box a:nth-child(2) {
+  background: transparent;
+  color: var(--main-color);
+}
+.btn-box a:nth-child(2):hover {
+    color: var(--bg-color);
+  
+  }
+.btn-box a:nth-child(2)::before {
+  background: var(--main-color);
+
+}
+
+.btn-box a::before {
+  content: "";
+  position: absolute;/*non "spinge il testo"*/
+  /*in posizioni assolute left top sono posizioni d'inizio*/
+   /*in questo caso top 0 parte dall'inizio del container superiore
+   left parte dal margine sinistro e la larghezza è 0*/
+  top: 0;
+  left: 0px;
+  width: 0;
+  height: 100%;
+  background: var(--bg-color);
+  z-index: -1; /*mette dietro all'elemento*/
+
+
+}
+.btn-box a:hover::before {
+    /* quando è hover la larghezza è il totale del container che si
+    riempirà da sinistra verso destra con la transizione definita in before*/
+  width: 100%;
+  transition: 0.5s;
+
+  /*si può anche definire qui e mi sembra abbia più senso*/
+}
+
+.home-sci{
+    position: absolute;
+    bottom: 40px;
+    width: 170px;
+  display: flex;
+  justify-content: space-between;
+
+}
+.home-sci a{
+    position: relative;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    background: transparent;
+    border: 2px solid var(--main-color);
+    border-radius: 50%;
+    font-size: 20px;
+    color: var(--main-color);
+    text-decoration: none;
+    z-index: 1;
+    overflow: hidden;
+
+}
+.home-sci a::before{
+    content: "";
+    position: absolute;
+    top:0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background: var(--main-color);
+    z-index: -1;
+}
+.home-sci a:hover{
+ color: var(--bg-color);
+}
+.home-sci a:hover::before{
+    transition: 0.3s;
+width: 100%;
+
+}
+
+.about{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap:2rem;
+  background: var(--bg-color);
+  padding-bottom: 6rem;
+}
+.heading{
+  font-size: 5rem;
+  margin-bottom:3rem;
+  text-align: center;
+}
+span{
+  color: var(--main-color);
+}
+.about-img{
+  position: relative;
+  width: 25rem;
+  height: 25rem;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.about-img img{
+  width:90%;
+  border-radius: 50%;
+  border: .2rem solid var(--main-color);
+}
+
+.about-img .circle-spin{
+  position: absolute;
+  top: 50%;
+  left:50%;
+  transform: translate(-50%, -50%) rotate(0);/*da capire*/
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  border-top: .2rem solid var(--second-bg-color);
+  border-bottom: .2rem solid var(--second-bg-color);
+  border-left: .2rem solid var(--main-color);
+  border-right: .2rem solid var(--main-color)
+  
+
+}
+.about-content{
+  text-align: center;
+  
+}
+.about-content h3{
+  font-size: 2.6rem;
+}
+.about-content p{
+  font-size: 1.6rem;
+  margin: 2rem 0 3rem;
+
+}
+
+.btn-box.btns{
+  display: inline-block;
+  width: 15rem;;
+
+}
+.btn-box.btns a::before{
+  background: var(--second-bg-color);
+}
+
+.education{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  min-height: auto;
+  padding-bottom:5rem;
+
+}
+.education-row{
+  display: flex;
+  flex-wrap: wrap;
+
+}
+
+.education-row .education-column{
+  flex: 1 1 40rem;  
+}
+.education-column .title{
+  font-size:2.5rem;
+  margin: 0 0 1.5rem 2rem;
+}
+.education-box .education-content{
+  position: relative;
+  padding-left: 2rem;
+}
+.education-content .content{
+  position: relative;
+  padding: 1.5rem;
+  border: .2rem solid var(--main-color);
+  border-radius: .6rem;
+  margin-bottom: 2rem;
+
+}
+
