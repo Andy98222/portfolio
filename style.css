@@ -172,6 +172,27 @@ section{
 
   /*si può anche definire qui e mi sembra abbia più senso*/
 }
+@media only screen and (max-width: 768px) {
+  /* CSS rules for screens 768px and wider */
+  .home-content h1 {
+    font-size: 30px;
+    font-weight: 700;
+  
+    line-height: 1.2;
+  }
+  
+  
+  .home-content p {
+    font-size: 10px;
+    margin: 20px 0 40px;
+  }
+  .home-content .btn-box {
+    display: flex;
+    justify-content: space-between;
+    width: 200px;
+    height: 30px;
+  }
+}
 
 .home-sci{
     position: absolute;
