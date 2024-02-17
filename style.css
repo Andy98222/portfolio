@@ -177,6 +177,7 @@ section{
   section{
     min-height:100vh;
     padding:2rem;
+    transition: 1.5s;
   }
   .home-content h1 {
     font-size: 30px;
@@ -204,6 +205,7 @@ section{
     width: 170px;
   display: flex;
   justify-content: space-between;
+  margin-top: 5%;
 
 }
 .home-sci a{
