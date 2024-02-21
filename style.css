@@ -117,11 +117,11 @@ section{
   -webkit-background-clip: text;
 
   background-position: -33rem 0;
-  
-}
-.home.show-animate.home-content .text-animate h3{
   animation: homeBgText 5s linear infinite;
   animation-delay: 1s;
+}
+.home.show-animate.home-content .text-animate h3{
+  animation: homeBgText 5s;
 }
 .home-content .text-animate h3::before{
   content: '';
@@ -131,12 +131,9 @@ section{
   width:0;
   height: 100%;
   border-right: 2px solid var(--main-color);
-
-
-}
-.home.show-animate.home-content .text-animate h3::before{
   animation: homeCursorText 5s linear infinite;
   animation-delay: 1s;
+
 }
 .home-content h1 {
  position: relative;
@@ -672,12 +669,12 @@ background: var(--main-color) ;
 .logo .animate, .navbar .animate, #menu-icon .animate,
 .home.show-animate .animate
 {
-  animation:showRight 1s ease forwards;
-  animation-delay: calc(.1s * var(--i));
+  animation:showRight 0.6s ease forwards;
+  animation-delay: calc(.3s * var(--i));
 }
 .animate.scroll{
-  transition: 0.7s ease;
-  transition-delay: calc(.05s * var(--i)); ;
+  transition: 0.6s ease;
+  transition-delay: calc(.3s * var(--i)); ;
   animation: none;
 }
 .education .education-box .animate.scroll{
