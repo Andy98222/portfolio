@@ -309,7 +309,7 @@ span{
   border-bottom: .2rem solid var(--second-bg-color);
   border-left: .2rem solid var(--main-color);
   border-right: .2rem solid var(--main-color);
-  animation: aboutSpinner 8s linear infinite;
+  animation: aboutSpinner 10s linear infinite;
 
 }
 .about-content{
