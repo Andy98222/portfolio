@@ -677,7 +677,7 @@ background: var(--main-color) ;
 }
 .animate.scroll{
   transition: 0.7s ease;
-  transition-delay: calc(.1s * var(--i)); ;
+  transition-delay: calc(.05s * var(--i)); ;
   animation: none;
 }
 .education .education-box .animate.scroll{
