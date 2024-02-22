@@ -13,11 +13,11 @@ let navLinks = document.querySelectorAll('header nav a');
 window.onscroll = () =>{
     sections.forEach(sec => {
         let top = window.scrollY;
-        let offset = sec.offsetTop - 100;
+        let offset = sec.offsetTop -320;
         let height = sec.offsetHeight;
         let id = sec.getAttribute('id');
         console.log("top:"+top+"offset:"+offset+"height:"+height+"id:"+id);
-        if(top >= offset -700 && top < offset +height){
+        if(top >= offset  && top < offset +height){
             //active navbar links
             navLinks.forEach(links =>{
                 links.classList.remove('active');
@@ -70,4 +70,45 @@ document.addEventListener("DOMContentLoaded", function() {
             console.log("Span element not found within .progress element.");
         }
     });
+});
+
+
+//
+document.addEventListener("DOMContentLoaded", function() {
+  document.getElementById("contactForm").addEventListener("submit", function(event) {
+    event.preventDefault(); // Evita il comportamento predefinito del modulo di inviare il modulo
+
+    // Recupera i dati del modulo
+    const formData = new FormData(this);
+
+   // Estrai i dati e costruisci un oggetto JavaScript ordinario
+   const formDataObject = {};
+   formData.forEach((value, key) => {
+     formDataObject[key] = value;
+   });
+
+   // Converti l'oggetto in una stringa JSON
+   const jsonData = JSON.stringify(formDataObject);
+    // Invia una richiesta AJAX al backend
+    fetch("http://localhost:3000/api/handle_form", {
+      headers: {
+        'Content-Type': 'application/json',
+        'Accept': 'application/json'},
+      method: "POST",
+      body:  jsonData
+    })
+    .then(response => {
+      if (!response.ok) {
+        throw new Error("Errore nella richiesta");
+      }
+      return response.text();
+    })
+    .then(data => {
+      console.log(data); // Riceve i dati di risposta dal backend
+      // Puoi fare qualsiasi altra cosa con i dati di risposta qui
+    })
+    .catch(error => {
+      console.error("Errore:", error);
+    });
+  });
 });
