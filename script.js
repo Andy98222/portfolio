@@ -92,7 +92,7 @@ document.addEventListener("DOMContentLoaded", function() {
    // Converti l'oggetto in una stringa JSON
    const jsonData = JSON.stringify(formDataObject);
     // Invia una richiesta AJAX al backend
-    fetch("https://portfolio-server-hfj2.onrender.com:3000/api/handle_form", {
+    fetch("https://portfolio-server-hfj2.onrender.com/api/handle_form", {
       headers: {
         'Content-Type': 'application/json',
         'Accept': 'application/json'},
