@@ -1,6 +1,11 @@
+var serverUrl = "https://portfolio-server-hfj2.onrender.com";
+serverUrl = "http://localhost:3000";
+
 // toggle icon navbar
 let menuIcon = document.querySelector('#menu-icon');
 let navbar = document.querySelector('.navbar');
+
+let loc;
 
 menuIcon.onclick = () =>{
     menuIcon.classList.toggle('bx-x');
@@ -16,7 +21,7 @@ window.onscroll = () =>{
         let offset = sec.offsetTop -320;
         let height = sec.offsetHeight;
         let id = sec.getAttribute('id');
-        console.log("top:"+top+"offset:"+offset+"height:"+height+"id:"+id);
+       // console.log("top:"+top+"offset:"+offset+"height:"+height+"id:"+id);
         if(top >= offset  && top < offset +height){
             //active navbar links
             navLinks.forEach(links =>{
@@ -91,8 +96,10 @@ document.addEventListener("DOMContentLoaded", function() {
 
    // Converti l'oggetto in una stringa JSON
    const jsonData = JSON.stringify(formDataObject);
+
+   let url = serverUrl + "/api/handle_form";
     // Invia una richiesta AJAX al backend
-    fetch("https://portfolio-server-hfj2.onrender.com/api/handle_form", {
+    fetch(url, {
       headers: {
         'Content-Type': 'application/json',
         'Accept': 'application/json'},
@@ -114,3 +121,7 @@ document.addEventListener("DOMContentLoaded", function() {
     });
   });
 });
+
+
+//
+
