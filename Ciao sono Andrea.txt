@@ -1,0 +1,15 @@
+Ciao sono Andrea
+Sviluppatore frontend
+Sono un programmatore con esperienza in applicazioni ERP che esplora il mondo dello sviluppo Web,
+iniziando con piccoli design Frontend per unire le mie pregresse conoscenze Backend e diventare un completo sviluppatore Full stack!
+
+Ciao, Mi chiamo Andre Lombardi, sviluppatore con base attualmente in Italia.
+La passione per l'informatica e il mondo del tech risiede in me sin dall'infanzia ma sboccia specialmente negli anni della scuola,
+quando scopro che, con un po' di logica e un linguaggio di programmazione, potevo realizzare applicazioni per semplificarmi la vita e automatizzare processi
+altrimenti noiosi e meccanici. 
+Possiedo un'esperienza lavorativa variegata di ABAP, linguaggio proprietario del gestionale SAP, 
+dove realizzo applicazioni ERP che coprono necessità aziendali di ogni tipo, come: interfacce, reportistica, 
+inserimenti di informazioni massivi e design di documenti generati da codice (fatture, bolle di consegna, ordini di produzione).
+Ho maturato esperienza anche lato QA, ovvero il controllo qualità di un'applicazione, sia dal punto di vista del funzionamento sia dell'ottimizzazione del codice.
+Nell'ultimo periodo sto approfondendo lo sviluppo Web con maggior focus sul design, mio punto debole, per poi unire le conoscenze front e back-end
+e diventare uno sviluppatore full-stack.

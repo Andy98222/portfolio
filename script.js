@@ -80,6 +80,7 @@ document.addEventListener("DOMContentLoaded", function() {
 
 //
 document.addEventListener("DOMContentLoaded", function() {
+  
   document.getElementById("contactForm").addEventListener("submit", function(event) {
     event.preventDefault(); // Evita il comportamento predefinito del modulo di inviare il modulo
 
@@ -123,5 +124,23 @@ document.addEventListener("DOMContentLoaded", function() {
 });
 
 
-//
+
+document.getElementById("lang_selection").onclick = function() {
+  var langOptions = document.querySelector(".lang-options");
+  var iconElement = document.getElementById("arrow_down");
+ 
+  if (iconElement.classList.contains("bx") && iconElement.classList.contains("bxs-down-arrow")) {
+    langOptions.style.display = "flex";
+  
+    iconElement.classList.remove("bx", "bxs-down-arrow"); // Rimuove le classi esistenti
+    iconElement.classList.add("bx", "bxs-up-arrow"); // Aggiunge la nuova classe
+  } else {
+    langOptions.style.display = "none";
+    
+    iconElement.classList.remove("bx", "bxs-up-arrow"); // Rimuove le classi esistenti
+    iconElement.classList.add("bx", "bxs-down-arrow"); // Aggiunge la nuova classe
+  }
+  
+ 
+};
 
