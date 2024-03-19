@@ -60,7 +60,7 @@ body {
   
   position: relative;
   font-size: 25px;
-  left: 6%;
+  left: 1%;
   color: var(--text-color);
   text-decoration: none;
   font-weight: 600;
@@ -813,7 +813,7 @@ margin-left: 10%;
   /* background: var(--bg-color);*/
   }
   a.logo{
-    margin-left: 10%;
+    margin-left: 15%;
   }
   #menu-icon{
     display: block;
@@ -882,7 +882,7 @@ transition-delay: 0s;
 
 @media (max-width: 520px){
   a.logo{
-    margin-left: 17%;
+    margin-left: 22%;
     font-size: 20px;
   }
  html{
