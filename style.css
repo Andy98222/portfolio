@@ -125,7 +125,7 @@ transition: height 0.3s;
 
 /* Show the language options when the dropdown is hovered */
 .lang-options_active {
-  display: flex ;
+  display: none ;
 align-items: center;
 }
 
@@ -793,6 +793,11 @@ background: var(--main-color) ;
   .header{
    padding: 2rem 4%;
   }
+  a.logo{
+
+margin-left: 10%;
+
+  }
   section{
     padding: 10rem 4% 2rem;
   }
@@ -805,7 +810,7 @@ background: var(--main-color) ;
 }
 @media (max-width:768px){
   .header{
-   background: var(--bg-color);
+  /* background: var(--bg-color);*/
   }
   .logo{
     margin-left: 10%;

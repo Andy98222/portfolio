@@ -130,7 +130,7 @@ document.getElementById("lang_selection").onclick = function() {
   var iconElement = document.getElementById("arrow_down");
  
   if (iconElement.classList.contains("bx") && iconElement.classList.contains("bxs-down-arrow")) {
-    langOptions.style.display = "flex";
+    langOptions.style.display = "none";//it non implementata 
   
     iconElement.classList.remove("bx", "bxs-down-arrow"); // Rimuove le classi esistenti
     iconElement.classList.add("bx", "bxs-up-arrow"); // Aggiunge la nuova classe
