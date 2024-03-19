@@ -1,5 +1,5 @@
 var serverUrl = "https://portfolio-server-hfj2.onrender.com";
-serverUrl = "http://localhost:3000";
+//serverUrl = "http://localhost:3000";
 
 // toggle icon navbar
 let menuIcon = document.querySelector('#menu-icon');
