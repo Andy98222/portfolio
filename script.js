@@ -125,6 +125,8 @@ document.addEventListener("DOMContentLoaded", function() {
 
 
 
+
+
 document.getElementById("lang_selection").onclick = function() {
   var langOptions = document.querySelector(".lang-options");
   var iconElement = document.getElementById("arrow_down");
