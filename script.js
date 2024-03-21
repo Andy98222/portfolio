@@ -123,8 +123,27 @@ document.addEventListener("DOMContentLoaded", function() {
   });
 });
 
-
-
+//
+document.addEventListener("DOMContentLoaded", function() {
+let url = serverUrl + "/api/speak";
+// Invia una richiesta AJAX al backend
+fetch(url, {
+  method: "POST",
+})
+.then(response => {
+  if (!response.ok) {
+    throw new Error("Server non raggiungibile");
+  }
+  return response.text();
+})
+.then(data => {
+  console.log(data); // Riceve i dati di risposta dal backend
+  // Puoi fare qualsiasi altra cosa con i dati di risposta qui
+})
+.catch(error => {
+  console.error("Errore:", error);
+});
+});
 
 
 document.getElementById("lang_selection").onclick = function() {
