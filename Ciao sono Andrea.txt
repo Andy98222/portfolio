@@ -1,15 +1,6 @@
-Ciao sono Andrea
-Sviluppatore frontend
-Sono un programmatore con esperienza in applicazioni ERP che esplora il mondo dello sviluppo Web,
-iniziando con piccoli design Frontend per unire le mie pregresse conoscenze Backend e diventare un completo sviluppatore Full stack!
+sono un programmatore con esperienza in applicazioni ERP che usano SAP/ABAP,  AL QUALE PIACE CURIOSARE IN ALTRE BRANCHIE DELL'INFORMATICA COME WEB DEVELOPMENT, VIDEOGIOCHI E INTELLIGENZA ARTIFICIALE.
 
-Ciao, Mi chiamo Andre Lombardi, sviluppatore con base attualmente in Italia.
-La passione per l'informatica e il mondo del tech risiede in me sin dall'infanzia ma sboccia specialmente negli anni della scuola,
-quando scopro che, con un po' di logica e un linguaggio di programmazione, potevo realizzare applicazioni per semplificarmi la vita e automatizzare processi
-altrimenti noiosi e meccanici. 
-Possiedo un'esperienza lavorativa variegata di ABAP, linguaggio proprietario del gestionale SAP, 
-dove realizzo applicazioni ERP che coprono necessità aziendali di ogni tipo, come: interfacce, reportistica, 
-inserimenti di informazioni massivi e design di documenti generati da codice (fatture, bolle di consegna, ordini di produzione).
-Ho maturato esperienza anche lato QA, ovvero il controllo qualità di un'applicazione, sia dal punto di vista del funzionamento sia dell'ottimizzazione del codice.
-Nell'ultimo periodo sto approfondendo lo sviluppo Web con maggior focus sul design, mio punto debole, per poi unire le conoscenze front e back-end
-e diventare uno sviluppatore full-stack.
+
+Salve, sono Andrea Lombardi, uno sviluppatore attualmente residente a Torino, Italia. Il fascino per l'informatica e il mondo tecnologico mi accompagna fin dall'infanzia, ma è sbocciato durante gli anni della scuola. È stato allora che ho capito che, applicando la logica e padroneggiando un linguaggio di programmazione, potevo creare applicazioni per semplificare compiti e automatizzare processi noiosi, rendendo la vita più facile. Il mio percorso professionale è stato vario, principalmente in ABAP, il linguaggio proprietario del sistema gestionale SAP. Qui mi sono specializzato nello sviluppo di applicazioni ERP su misura per le varie esigenze aziendali, tra cui interfacce, strumenti di reporting, soluzioni per la gestione dei dati e la creazione di documenti come fatture e ordini di produzione tramite codice. Inoltre, ho acquisito una preziosa esperienza nel controllo qualità, assicurando sia la funzionalità che l'efficienza del codice nelle applicazioni. Di recente, ho affinato le mie competenze nello sviluppo web, con particolare attenzione alla progettazione, che al momento sembra essere il mio punto debole. La mia curiosità per le altre branche dell'informatica mi ha aiutato a non isolarmi nel mondo chiuso di SAP e mi ha permesso di distinguermi nel mio approccio alle soluzioni.
+
+Tradotto con DeepL.com (versione gratuita)

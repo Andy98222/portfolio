@@ -181,7 +181,7 @@ section{
 }
 .home-content .text-animate{
   position: relative;
-  width: 32.8rem;
+  width: 18rem;
 }
 .home-content .text-animate h3{
   font-size: 3.2rem;
@@ -192,12 +192,12 @@ section{
   background-repeat: no-repeat;
   -webkit-background-clip: text;
 
-  background-position: -33rem 0;
+  background-position: -18rem 0;
   animation: homeBgText 5s linear infinite;
   animation-delay: 1s;
 }
 .home.show-animate.home-content .text-animate h3{
-  animation: homeBgText 5s;
+  animation: homeBgText 4s;
 }
 .home-content .text-animate h3::before{
   content: '';
@@ -944,7 +944,7 @@ height:38px;
  }
  @keyframes homeBgText{
   0%,10%,100%{
-    background-position: -33rem 0;
+    background-position: -18rem 0;
   }
   65%,85%{
     background-position: 0 0;
