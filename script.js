@@ -120,7 +120,12 @@ document.addEventListener("DOMContentLoaded", function() {
     .catch(error => {
       console.error("Errore:", error);
     });
+  
+    setTimeout(function() {
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+  }, 1000); // Adjust the delay time as needed (in milliseconds)
   });
+ 
 });
 
 //
